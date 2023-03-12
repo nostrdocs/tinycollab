@@ -1,0 +1,28 @@
+{
+	"include": ["./**/*"],
+	"exclude": ["dist", "node_modules"],
+	"compilerOptions": {
+		"rootDir": "./",
+		"outDir": "../../dist/test",
+		"target": "es2017",
+		"types": ["node", "mocha"],
+		"declaration": false,
+		"declarationMap": false,
+		"esModuleInterop": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"sourceMap": true,
+		"inlineSources": true,
+		"noImplicitAny": false,
+		"incremental": true,
+		"strict": true,
+		"pretty": true,
+		"lib": ["ES2017", "ES2018.Promise", "DOM", "DOM.Iterable"],
+	},
+	"references": [
+		{
+			"path": "../..",
+		},
+	],
+}
